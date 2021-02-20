@@ -1,0 +1,19 @@
+<!--pages/home/home.wxml-->
+<view class='container'>
+  <view class='container-top'>
+    <navigator class='home-items-first' wx:for="{{homeData}}" wx:key="index" url='{{index === 0 ? "/pages/remove/remove?type="+item.type : "/pages/remove/remove?type="+item.type}}' wx:if='{{index <= 1}}'>
+      <image class='items-img-first' src='{{item.icon}}'></image>
+      <text class='items-text-first'>{{item.text}}</text>
+    </navigator>
+  </view>
+  <view class='container-bottom'>
+    <navigator class='home-items' wx:for="{{homeData}}" wx:key="index" url='{{index === 0 ? "/pages/remove/remove?type="+item.type : "/pages/remove/remove?type="+item.type}}' wx:if='{{index > 1}}'>
+      <image class='items-img' src='{{item.icon}}'></image>
+      <text class='items-text'>{{item.text}}</text>
+    </navigator>
+  </view>
+  <view class="dialog" wx:if="{{dialog}}">
+    <text>目前仅快手去水印可用，其他去水印功能暂时未上线</text>
+    <button bindtap="showDialog">确定</button>
+  </view>
+</view>
