@@ -131,14 +131,13 @@ Page({
         'ids':ids
       },
       success(res){
-        console.log(res)
         console.log(res.data.item_list[0].video.play_addr.url_list[0]) //获取到视频链接，然后截取字符串把playwn替换play
         var v1 = res.data.item_list[0].video.play_addr.url_list[0]
         console.log("v1"+v1)
         var sub1 = v1.substring(0,34)
         var sub2 = v1.substring(40,101)
         var videoUrl = sub1+"play"+sub2  //真实视频链接
-        console.log(videoUrl)
+        console.log("url: "+videoUrl)
         _this.downloadFileDY(videoUrl)
         // _this.setData({
         //   vedioUrl: videoUrl
@@ -158,7 +157,7 @@ Page({
       success(res){
         if(res.data.status == "200"){
             _this.setData({
-              vedioUrl: "https://prosys.club/upload/"+res.data.ids
+              vedioUrl: "https://prosys.club/Video/upload"+res.data.ids
             })
             return
         }
