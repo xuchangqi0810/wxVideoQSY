@@ -8,6 +8,6 @@
 
 #### 邮箱
 
-1099242331@gmail.com
+1099242331@qq.com
 
 ![小程序二维码](https://www.prosys.club/Video/coder.jpg)
