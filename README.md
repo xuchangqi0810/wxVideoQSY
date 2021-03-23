@@ -8,6 +8,6 @@
 
 #### 邮箱
 
-yidierh@gmail.com
+1099242331@gmail.com
 
-![小程序二维码](https://raw.githubusercontent.com/eddieyd/remove-code/master/code.jpg)
+![小程序二维码](https://www.prosys.club/Video/coder.jpg)
